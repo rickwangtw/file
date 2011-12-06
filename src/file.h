@@ -34,7 +34,11 @@
 #define __file_h__
 
 #ifdef HAVE_CONFIG_H
+#ifdef ANDROID
+#include <android-config.h>
+#else
 #include <config.h>
+#endif
 #endif
 
 #ifdef WIN32
